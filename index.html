@@ -1,0 +1,101 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chilanka">
+
+
+    
+
+<link href= 
+'https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css'
+    rel='stylesheet'> 
+
+  <script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" > 
+  </script> 
+
+  <script src= 
+"https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" > 
+  </script> 
+
+
+
+
+
+    <title>New Year </title>
+</head>
+<body>
+
+	<input type="text" id="datepicker"/>
+
+
+
+
+
+  <script> 
+    $(function() {
+    $( "#datepicker" ).datepicker();
+    $("#datepicker").on("change",function(){
+        var selecteddate = $(this).val();
+        console.log(selecteddate);
+    });
+});
+  </script> 
+
+
+
+
+
+
+
+
+    <div class="main">
+        <div class="title">HAPPY LOHRI 2021</div>
+
+        <div class="counter">
+            <div class="item" >
+                <div class="day" id="day">
+                    0
+                </div><hr>
+                <div>Days</div>
+            </div>
+    
+            <div class="item">
+                <div class="hour" id="hour" >
+                    0
+                </div><hr>
+                <div>Hours</div>
+            </div>
+
+            <div class="item">
+                <div class="minute" id="minute">
+                    0
+                </div><hr>
+                <div>Minutes</div>
+            </div>
+
+            <div class="item">
+                <div class="second" id="second">
+                    0
+                </div><hr>
+                <div>Seconds</div>
+            </div>
+    </div>
+   
+    
+<script src="main.js"></script>
+
+
+ 
+<div id="datepicker"></div>
+ 
+<script>
+$( ".selector" ).datepicker("show");
+</script>
+
+
+</body>
+</html>
