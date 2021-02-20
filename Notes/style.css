@@ -1,0 +1,76 @@
+
+body{
+
+	background-color:  #00b386 ;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 3rem;
+}
+
+
+
+.note{
+
+	background-color: #9fdf9f;
+	margin: 20px;
+	width: 350px;
+	height: 350px;
+  border-style: outset;
+  border-width: 6px;
+
+}
+
+.note 
+.tools{
+       
+       background-color: transparent;
+       display: flex;
+       justify-content: flex-end;
+       padding: .5rem;
+}
+
+.note 
+.tools button{
+	background-color: transparent;
+    border:none;
+    color: black;
+    padding-left: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.add{
+  background-color: transparent;
+  border-radius: 3px;
+  border:none;
+  padding: 1rem;
+  position: fixed;
+  top: 1rem;
+    right:1rem;
+    cursor: pointer;
+}
+
+.note 
+.main{
+
+    height: 350px;
+    overflow: hidden;
+    width: 100%;
+    font-size: 3rem;
+
+}
+
+.note textarea{
+	height: 350px;
+    overflow: hidden;
+    width: 100%;
+    border:none;
+    outline:0px none transparent;
+}
+.note 
+.hidden{
+
+	display: none;
+}
+
